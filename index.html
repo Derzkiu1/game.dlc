@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillercoin</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive; /* Используем шрифт Pacifico */
+            text-align: center;
+            background-color: #030326; /* Черный фон */
+            color: #fff; /* Белый текст */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            height: calc(100vh - 60px); /* 100% высоты экрана за исключением высоты кнопок */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #fff; /* Белый цвет для заголовка */
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .balance {
+            position: absolute;
+            top: calc(50% - 20px); /* По вертикали выравнивается практически с надписью */
+            left: 50%; /* По горизонтали по центру */
+            transform: translateX(-50%); /* Смещение на 50% влево */
+            margin-top: -250px; /* Дополнительный отступ сверху */
+        }
+        .balance img {
+            width: 10px;
+            height: 10px;
+            margin-left: 230px;
+            margin-top: -20px;
+            vertical-align: middle; /* Чтобы изображение было выровнено по вертикали */
+        }
+        .buttons {
+            position: fixed; /* Фиксированное позиционирование */
+            bottom: 0; /* Внизу страницы */
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для кнопок */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around; /* Равномерное распределение кнопок по ширине */
+            align-items: center;
+            z-index: 999; /* Позволяет кнопкам быть поверх содержимого страницы */
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        .logout {
+            position: absolute;
+            top: 10px; /* Отступ сверху */
+            left: 10px; /* Отступ слева */
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            z-index: 999; /* Позволяет кнопке быть поверх других элементов */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="logout">&#8592;</a> <!-- Стрелка влево -->
+    <h1>Dillercoin</h1>
+    <div class="container">
+        <div>
+            <!-- Баланс игрока -->
+            <p class="balance">Баланс: 1000 Dillercoin <img src="https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin-Transparent.png" alt="Coin Icon"></p>
+        </div>
+        <img src="https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin-Transparent.png" alt="Game Image">
+    </div>
+    <div class="buttons">
+        <!-- Кнопки -->
+        <a href="profile.html" class="button">
+            <img src="https://cdn-icons-png.flaticon.com/512/5987/5987424.png" alt="Profile Icon">
+            Profile
+        </a>
+        <a href="leaderboard.html" class="button">
+            <img src="https://www.freeiconspng.com/thumbs/leaderboard-icon/leaderboard-icon-27.png" alt="Leaderboard Icon">
+            Leaderboard
+        </a>
+        <a href="mine.html" class="button">
+            <img src="https://cdn-icons-png.flaticon.com/512/664/664112.png" alt="Mine Icon">
+            Mine
+        </a>
+        <a href="shop.html" class="button">
+            <img src="https://cdn-icons-png.freepik.com/512/869/869636.png" alt="Shop Icon">
+            Shop
+        </a>
+    </div>
+</body>
+</html>
